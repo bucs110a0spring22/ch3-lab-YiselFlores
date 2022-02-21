@@ -18,9 +18,25 @@ michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
 
 ## 5. your code goes here
+michelangelo.forward(random.randrange(1,101))
+leonardo.forward(random.randrange(1,101))
+michelangelo.goto(-100,20)
+leonardo.goto(-100,-20)
 
-
+for x in range(20):
+ michelangelo.forward(random.randrange(1,11))
+ leonardo.forward(random.randrange(1,11))
 # Part B - complete part B here
-
-
+michelangelo.goto(-100,20)
+leonardo.goto(-100,-20)
+michelangelo.hideturtle()
+leonardo.down()
+shapelist = [3,4,6,9,12]
+for x in range(len(shapelist)):
+  leonardo.clear()
+  for y in range(shapelist[x]):
+   leonardo.forward(20)
+   deg = 360/shapelist[x]
+   leonardo.right(deg)
+ 
 window.exitonclick()
